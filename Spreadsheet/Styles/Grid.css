@@ -1,0 +1,16 @@
+﻿.btnItalics {
+    font-style: italic;
+}
+
+.btnBold {
+    font-weight: bold;
+}
+
+.btnUnderLine {
+    text-decoration: underline;
+}
+
+#divControls {
+    margin-top: 15px;
+    padding-bottom: 15px;
+}

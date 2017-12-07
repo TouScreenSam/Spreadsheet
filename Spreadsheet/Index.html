@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Spreadsheet Exercise</title>
+    <script src="Scripts/Grid.js"></script>
+    <link rel="stylesheet" href="Styles/Grid.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+<body onload="generate_table()">
+    <!--Controls start-->
+    <div class="container-fluid">
+
+        <div id="divControls" class="row">
+            <div class="col-md-10 offset-md-1">
+                <div class="row">
+                    <div class="col-md-10">
+                        <button class="btn btn-primary" onclick="generate_table()">Refresh! <i class="fa fa-refresh" aria-hidden="true"></i></button>
+                        <div class="btn-group" role="group">
+                            <button id="btnItalics" class="btn btn-secondary" title="Italics" onclick="formatCell(this);"><i class="fa fa-italic" aria-hidden="true"></i></button>
+                            <button id="btnBold" class="btn btn-secondary" title="Bold" onclick="formatCell(this);"><i class="fa fa-bold" aria-hidden="true"></i></button>
+                            <button id="btnUnderLine" class="btn btn-secondary" title="Underline" onclick="formatCell(this);"><i class="fa fa-underline" aria-hidden="true"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Controls end-->
+        <!--Spread sheet start-->
+        <div class="row">
+            <div class="col-md-10 offset-md-1">
+                <div id="divSpreadSheet"></div>
+            </div>
+        </div>
+    </div>
+    <!--Spread sheet end-->
+</body>
+</html>

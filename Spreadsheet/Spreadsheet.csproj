@@ -75,6 +75,10 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="favicon.ico" />
+    <Content Include="Index.html" />
+    <Content Include="Scripts\Grid.js" />
+    <Content Include="Styles\Grid.css" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
